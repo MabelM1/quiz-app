@@ -4,15 +4,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
-    /*uglify: {
-      options: {
-       
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    }*/
 
     /*Grunt Sass*/
     sass: {
@@ -34,7 +25,7 @@ module.exports = function(grunt) {
         tasks: ["sass"]
       },
       scripts: {
-        // We watch and compile sass files as normal but don't live reload here
+        // We watch and compile JavaScript files as normal but don't live reload here
         files: ["assets/js/*.js"],
         tasks: ["uglify"]
       }
@@ -51,7 +42,6 @@ module.exports = function(grunt) {
   });
 
   // Load the Grunt plugins and task.
-  //grunt.loadNpmTasks('grunt');
   require("load-grunt-tasks")(grunt);
 
   // Default task(s).
