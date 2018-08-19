@@ -17,12 +17,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ["@babel/preset-env"]
+      },
+      dist: {
+        files: {
+          "public/js/scripts.js": "assets/js/scripts.js"
+        }
+      }
+    },
 
     watch: {
       sass: {
         // We watch and compile sass files as normal but don't live reload here
         files: ["assets/scss/**/*.scss"],
         tasks: ["sass"]
+      },
+      babel: {
+        files: ["assets/js/*.js"],
+        tasks: ["babel"]
       },
       scripts: {
         // We watch and compile JavaScript files as normal but don't live reload here
