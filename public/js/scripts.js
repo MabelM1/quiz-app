@@ -1,1 +1,1 @@
-function test(){return"hi"}
+var btn=document.querySelector(".start"),bgChange=()=>{document.querySelector(".intro").classList.add("disableIntro"),document.querySelector(".quiz").classList.add("quizEnable")};btn.addEventListener("click",bgChange);

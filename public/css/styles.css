@@ -23,6 +23,9 @@ h1 {
   padding-left: 0.4em;
   padding-right: 0.4em; }
 
+.disableIntro {
+  display: none; }
+
 .message {
   text-align: center;
   font-size: 2.5rem; }
@@ -36,6 +39,9 @@ h1 {
 
 .quiz {
   display: none; }
+
+.quizEnable {
+  display: block; }
 
 .timer {
   padding-bottom: 2em;
