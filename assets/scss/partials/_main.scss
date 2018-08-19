@@ -1,0 +1,46 @@
+.quiz {
+	display: none;
+}
+
+.timer {
+	padding-bottom: 2em;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.question {
+	text-align: center;
+	padding-bottom: 4em;
+	letter-spacing: 0.2em;
+	font-size: 2rem;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: strech;
+	align-content: stretch;
+}
+
+.btn {
+	flex: 1;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1.8rem;
+	letter-spacing: 0.2em;
+	background: $secondary-color;
+	color: white;
+	padding: 0.9em;
+	border: none;
+	outline: none;
+	transition: all 0.3s ease;
+	margin: 0.6em 2em;
+
+	&:hover {
+		background-color: $primary-accent;
+	}
+}

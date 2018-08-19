@@ -1,0 +1,75 @@
+/*   COLOR PALETTE     */
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono");
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  background-color: #2d2f53;
+  letter-spacing: 0.1em;
+  color: white; }
+
+h1 {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: "Cutive Mono", monospace;
+  color: white; }
+
+.intro {
+  padding-left: 0.4em;
+  padding-right: 0.4em; }
+
+.message {
+  text-align: center;
+  font-size: 2.5rem; }
+
+.button-wrapper {
+  display: flex;
+  padding-top: 2em; }
+
+.results {
+  display: none; }
+
+.quiz {
+  display: none; }
+
+.timer {
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 2rem; }
+
+.question {
+  text-align: center;
+  padding-bottom: 4em;
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: strech;
+  align-content: stretch; }
+
+.btn {
+  flex: 1;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  background: #f84aa7;
+  color: white;
+  padding: 0.9em;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  margin: 0.6em 2em; }
+  .btn:hover {
+    background-color: #44ffd1; }
