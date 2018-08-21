@@ -1,4 +1,6 @@
-var btn = document.querySelector(".start");
+let myvar;
+
+var startBtn = document.querySelector(".start");
 
 var bgChange = () => {
 	var intro = document.querySelector(".intro");
@@ -6,8 +8,26 @@ var bgChange = () => {
 
 	var quiz = document.querySelector(".quiz");
 	quiz.classList.add("quizEnable");
+
+	startTimer();
 };
 
-btn.addEventListener("click", bgChange);
+startBtn.addEventListener("click", bgChange);
+
+const startTimer = () => {
+	var timer = document.querySelector(".timer");
+	let count = 20;
+
+	let startCount = () => {
+		if (count > 0) {
+			timer.innerHTML = count;
+			count--;
+		} else {
+			clearTimeout(myVar);
+		}
+	};
+
+	myvar = setInterval(startCount, 1000);
+};
 
 
