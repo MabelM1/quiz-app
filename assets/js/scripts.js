@@ -1,12 +1,14 @@
 let myvar;
 
-var startBtn = document.querySelector(".start");
+const startBtn = document.querySelector(".start");
 
-var bgChange = () => {
-	var intro = document.querySelector(".intro");
+const bgChange = () => {
+	let intro = document.querySelector(".intro");
+	let quiz = document.querySelector(".quiz");
+
+	//Hides intro message
 	intro.classList.add("disableIntro");
-
-	var quiz = document.querySelector(".quiz");
+	//Hides intro message
 	quiz.classList.add("quizEnable");
 
 	startTimer();
@@ -15,19 +17,15 @@ var bgChange = () => {
 startBtn.addEventListener("click", bgChange);
 
 const startTimer = () => {
-	var timer = document.querySelector(".timer");
+	let timer = document.querySelector(".timer");
 	let count = 20;
 
-	let startCount = () => {
-		if (count > 0) {
-			timer.innerHTML = count;
-			count--;
-		} else {
-			clearTimeout(myVar);
-		}
+	//This function will display the count until it is 0
+	const startCount = () => {
+		return count > 0
+			? ((timer.innerHTML = count), count--)
+			: clearTimeout(myVar);
 	};
 
 	myvar = setInterval(startCount, 1000);
 };
-
-
