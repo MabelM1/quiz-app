@@ -1,0 +1,19 @@
+
+[
+	{
+		"question": "What is britney's name?",
+		"answers": {
+			"1": "Jean",
+			"2": "Spears"
+		},
+		"correctAnswer": "2"
+	},
+	{
+		"question": "What is britney's middle name?",
+		"answers": {
+			"1": "Jean",
+			"2": "Spears"
+		},
+		"correctAnswer": "1"
+	}
+]
