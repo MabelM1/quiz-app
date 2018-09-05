@@ -1,19 +1,22 @@
-
 [
 	{
 		"question": "What is britney's name?",
 		"answers": {
 			"1": "Jean",
-			"2": "Spears"
+			"2": "Spears",
+			"3": "Jessica",
+			"4": "Christina"
 		},
-		"correctAnswer": "2"
+		"correctAnswer": "two"
 	},
 	{
 		"question": "What is britney's middle name?",
 		"answers": {
 			"1": "Jean",
-			"2": "Spears"
+			"2": "Simpson",
+			"3": "Ashley",
+			"4": "Jamie"
 		},
-		"correctAnswer": "1"
+		"correctAnswer": "one"
 	}
 ]
