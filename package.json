@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-grunt-sass",
+  "name": "quiz-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,8 @@
     "grunt": "^1.0.3",
     "grunt-babel": "^8.0.0-beta.0",
     "grunt-contrib-uglify": "^3.4.0",
-    "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-uglify-es":
+      "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.0.1",
     "load-grunt-tasks": "^4.0.0",
