@@ -42,7 +42,8 @@ class Quiz {
 	/* Method that fetches data, stores it in an array and
 	     retrieves the first question     */
 	loadQuestions() {
-		fetch("http://localhost:3000/questions")
+		//fetch("http://localhost:3000/questions")
+		fetch("/questions")
 			.then(response => {
 				return response.json();
 			})
