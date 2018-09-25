@@ -1,16 +1,16 @@
 [
 	{
-		"question": "What is britney's name?",
+		"question": "What tv show did Britney appear in as a child?",
 		"answers": {
-			"1": "Jean",
-			"2": "Spears",
-			"3": "Jessica",
-			"4": "Christina"
+			"1": "Degrassi",
+			"2": "The All New Mickey Mouse Club",
+			"3": "Sam & Cat",
+			"4": "Victorious"
 		},
 		"correctAnswer": "two"
 	},
 	{
-		"question": "What is britney's middle name?",
+		"question": "What is Britney's middle name?",
 		"answers": {
 			"1": "Jean",
 			"2": "Simpson",
@@ -18,5 +18,86 @@
 			"4": "Jamie"
 		},
 		"correctAnswer": "one"
+	},
+	{
+		"question": "Which artist does NOT have a collaboration with Britney?",
+		"answers": {
+			"1": "Rihanna",
+			"2": "Ariana Grande",
+			"3": "Will.i.am",
+			"4": "Tinashe"
+		},
+		"correctAnswer": "two"
+	},
+	{
+		"question": "How many Grammy nominations does Britney have?",
+		"answers": {
+			"1": "Eight",
+			"2": "Thirteen",
+			"3": "Five",
+			"4": "One"
+		},
+		"correctAnswer": "one"
+	},
+	{
+		"question": "Which tv show has Britney NOT appeared in?",
+		"answers": {
+			"1": "Glee",
+			"2": "How I Met Your Mother",
+			"3": "Gossip Girl",
+			"4": "Jane the Virgin"
+		},
+		"correctAnswer": "three"
+	},
+	{
+		"question": "How many Grammys does britney have?",
+		"answers": {
+			"1": "Eight",
+			"2": "Four",
+			"3": "Two",
+			"4": "One"
+		},
+		"correctAnswer": "four"
+	},
+	{
+		"question": "How many Siblings does Britney has?",
+		"answers": {
+			"1": "None",
+			"2": "Three",
+			"3": "One",
+			"4": "Two"
+		},
+		"correctAnswer": "four"
+	},
+	{
+		"question": "How many perfumes does Britney have?",
+		"answers": {
+			"1": "24",
+			"2": "10",
+			"3": "30",
+			"4": "18"
+		},
+		"correctAnswer": "one"
+	},
+	{
+		"question": "Where was Britney born?",
+		"answers": {
+			"1": "Tennessee",
+			"2": "Louisiana",
+			"3": "Mississippi",
+			"4": "Florida"
+		},
+		"correctAnswer": "three"
+	},
+	{
+		"question":
+			"When did Britney receive a star on the Hollywood Walk of Fame?",
+		"answers": {
+			"1": "2013",
+			"2": "2003",
+			"3": "2000",
+			"4": "2014"
+		},
+		"correctAnswer": "two"
 	}
 ]
