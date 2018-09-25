@@ -12,13 +12,18 @@ body {
 }
 
 h1 {
-	padding-top: 2em;
+	padding-top: 3em;
 	padding-bottom: 1.5em;
 	margin-bottom: 0;
 	font-size: 4.5rem;
 	text-align: center;
 	font-family: "Cutive Mono", monospace;
 	color: white;
+
+	@include medium {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
 }
 
 .intro {
@@ -33,11 +38,16 @@ h1 {
 .message {
 	text-align: center;
 	font-size: 2.5rem;
+
+	@include medium {
+		font-size: 1.5rem;
+	}
 }
 
 .button-wrapper {
 	display: flex;
 	padding-top: 2em;
+	justify-content: center;
 }
 
 .results {

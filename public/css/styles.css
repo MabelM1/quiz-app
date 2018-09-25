@@ -1,4 +1,5 @@
 /*   COLOR PALETTE     */
+/*Breakpoints*/
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono");
 .container {
   max-width: 960px;
@@ -12,13 +13,17 @@ body {
   color: white; }
 
 h1 {
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: 1.5em;
   margin-bottom: 0;
   font-size: 4.5rem;
   text-align: center;
   font-family: "Cutive Mono", monospace;
   color: white; }
+  @media (min-width: 640px) {
+    h1 {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; } }
 
 .intro {
   padding-left: 0.4em;
@@ -30,10 +35,14 @@ h1 {
 .message {
   text-align: center;
   font-size: 2.5rem; }
+  @media (min-width: 640px) {
+    .message {
+      font-size: 1.5rem; } }
 
 .button-wrapper {
   display: flex;
-  padding-top: 2em; }
+  padding-top: 2em;
+  justify-content: center; }
 
 .results {
   display: none; }
@@ -56,6 +65,9 @@ h1 {
   font-size: 2rem;
   margin-left: 1em;
   margin-right: 1em; }
+  @media (min-width: 640px) {
+    .question {
+      padding-bottom: 2em; } }
 
 .flex-container {
   display: flex;
@@ -80,3 +92,13 @@ h1 {
   margin: 0.6em 2em; }
   .btn:hover {
     background-color: #44ffd1; }
+
+@media (min-width: 640px) {
+  .start {
+    flex: 0 0 30%; } }
+
+.info {
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+  padding-top: 1em; }

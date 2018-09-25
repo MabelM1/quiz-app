@@ -3,3 +3,20 @@
 $primary-color: #2d2f53;
 $secondary-color: #f84aa7;
 $primary-accent: #44ffd1;
+
+/*Breakpoints*/
+
+$medium: 640px;
+$large: 960px;
+
+@mixin large {
+	@media (min-width: #{$large}) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media (min-width: #{$medium}) {
+		@content;
+	}
+}

@@ -19,6 +19,10 @@
 	font-size: 2rem;
 	margin-left: 1em;
 	margin-right: 1em;
+
+	@include medium {
+		padding-bottom: 2em;
+	}
 }
 
 .flex-container {
@@ -47,4 +51,17 @@
 	&:hover {
 		background-color: $primary-accent;
 	}
+}
+
+.start {
+	@include medium {
+		flex: 0 0 30%;
+	}
+}
+
+.info {
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-size: 1.5rem;
+	padding-top: 1em;
 }
