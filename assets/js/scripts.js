@@ -14,6 +14,7 @@ class Quiz {
 		this.resultmsg = document.querySelector(".result-msg");
 		this.qsNum = document.querySelector(".question-number");
 		this.ansResult = document.querySelector(".answer-result");
+		this.restart = document.querySelector(".restart");
 		this.addEventListeners();
 		this.count = 0;
 		this.correct = 0;
@@ -23,7 +24,7 @@ class Quiz {
 	startQuiz() {
 		//Hides intro message
 		this.intro.classList.add("disableIntro");
-		//Hides quiz section
+		//Enable quiz section
 		this.quiz.classList.add("quizEnable");
 
 		this.loadQuestions();
@@ -109,12 +110,23 @@ class Quiz {
 		} else {
 			this.resultmsg.innerHTML = ` ${message[2]}`;
 		}
+		this.count = 0;
+		this.correct = 0;
+	}
+
+	/*  Method restarts quiz */
+	restartQuiz() {
+		this.results.style.display = "none";
+		this.quiz.classList.add("quizEnable");
+
+		this.getNewQuestion();
 	}
 
 	/* Method that adds event listeners to various buttons */
 	addEventListeners() {
 		this.startQuiz = this.startQuiz.bind(this);
 		this.checkAnswer = this.checkAnswer.bind(this);
+		this.restartQuiz = this.restartQuiz.bind(this);
 
 		let btnNodes = [this.button1, this.button2, this.button3, this.button4];
 
@@ -123,6 +135,7 @@ class Quiz {
 		);
 
 		this.startBtn.addEventListener("click", this.startQuiz);
+		this.restart.addEventListener("click", this.restartQuiz);
 	}
 }
 
